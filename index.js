@@ -6,6 +6,7 @@ const { Readable } = require('stream');
 const colors = require('colors/safe');
 
 // Setup frames in memory
+
 let original;
 let flipped;
 
