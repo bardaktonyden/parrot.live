@@ -5,7 +5,7 @@ const url = require('url');
 const { Readable } = require('stream');
 const colors = require('colors/safe');
 
-// Setup frames in memory
+                                                                                // Setup frames in memory
 
 let original;
 let flipped;
@@ -18,6 +18,7 @@ let flipped;
     const frame = await fs.readFile(path.join(framesPath, file));
     return frame.toString();
   }));
+  
   flipped = original.map(f => {
     return f
       .toString()
@@ -39,6 +40,7 @@ const colorsOptions = [
   'cyan',
   'white'
 ];
+
 const numColors = colorsOptions.length;
 const selectColor = previousColor => {
   let color;
